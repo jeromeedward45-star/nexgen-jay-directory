@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('a[href="#"]').forEach((link) => {
+    document.querySelectorAll('a[href="#"]:not(.bento-card-link)').forEach((link) => {
         link.addEventListener('click', (e) => e.preventDefault());
     });
 
