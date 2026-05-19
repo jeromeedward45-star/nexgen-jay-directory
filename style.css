@@ -1,0 +1,703 @@
+/* Modern Reset & Colors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #f3f4f6;
+    line-height: 1.6;
+    padding-bottom: 80px;
+}
+
+/* Navigation Bar Styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #0b0f19; /* Solid deep slate background */
+    border-bottom: 1px solid #1f2937;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo Styling */
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #a8c0ff; /* Subtle blue highlight for "Jhay" */
+}
+
+/* Navigation Menu */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+/* Standalone Submit Tool Button Styling */
+.navbar ul li a.btn-primary {
+    background: linear-gradient(135deg, #3f2b96, #a8c0ff);
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar ul li a.btn-primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(168, 192, 255, 0.3);
+}
+
+    
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #6366f1;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f3f4f6;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3f2b96, #a8c0ff);
+    color: #ffffff !important;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+/* 🔥 The Interactive Hover State */
+.navbar ul li a.btn-primary:hover {
+    transform: translateY(-2px) scale(1.03); /* Lifts up and grows slightly */
+    box-shadow: 0 4px 15px rgba(168, 192, 255, 0.4); /* Neon accent glow */
+    background: linear-gradient(135deg, #4c32b3, #b9cffff); /* Brightens gradient slightly */
+    cursor: pointer;
+}
+
+    
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 100px 20px 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #9ca3af;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 24px;
+    border-radius: 30px;
+    border: 1px solid #1f2937;
+    background-color: #111827;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #6366f1;
+}
+
+/* Bento Grid Setup */
+.directory-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 4%;
+}
+
+.directory-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Bento Cards Design */
+.bento-card {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    min-height: 240px;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    border-color: #374151;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.bento-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.bento-card p {
+    color: #9ca3af;
+    font-size: 15px;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+/* Featured Card (Spans 2 rows) */
+.featured {
+    grid-row: span 2;
+    background: linear-gradient(145deg, #111827 0%, #1e1b4b 100%);
+    border-color: #312e81;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: #312e81;
+    color: #a5b4fc;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: 1px solid #4338ca;
+}
+
+/* Wide Card (Spans 2 columns) */
+.wide {
+    grid-column: span 2;
+    background: linear-gradient(145deg, #111827 0%, #112240 100%);
+}
+
+/* Card Footer Layout */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1f2937;
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.category {
+    font-size: 13px;
+    color: #6366f1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-card {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.btn-card:hover {
+    color: #818cf8;
+}
+
+/* Responsive Scaling */
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .wide {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .featured {
+        grid-row: span 1;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+}search-bar {
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.search-bar input {
+    width: 450px;
+    padding: 14px 20px;
+    background-color: #1e293b; /* Dark slate background */
+    border: 1px solid #334155;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Interactivity when typing */
+.search-bar input:focus {
+    outline: none;
+    border-color: #a8c0ff;
+    box-shadow: 0 0 15px rgba(168, 192, 255, 0.2);
+}
+
+directory-container {
+    ma.x-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.directory-container h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* The layout engine */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Individual card styling */
+.bento-card {
+    background-color: #111827; /* Deep card background */
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for the cards */
+.bento-card:hover {
+    transform: translateY(-5px);
+    border-color: #3f2b96;
+}
+
+/* Navigation link hover */
+nav ul li a:hover {
+    color: #a8c0ff;
+}
+
+/* Submit Tool button hover */
+.btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3f2b96;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* Container for the entire directory section */
+.directory-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+/* Heading for "Popular AI Tools & Agents" */
+.directory-container h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* 🎯 The Bento Grid Engine */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+/* Individual Card Styling */
+.bento-card {
+    background: #111827; /* Clean, deep slate card color */
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.bento-card:hover {
+    transform: translateY(-6px);
+    border-color: #3f2b96; /* Matches your accent theme color */
+    box-shadow: 0 10px 20px rgba(63, 43, 150, 0.15);
+    cursor: pointer;
+}
+
+/* Badge style inside the card (e.g., "Featured") */
+.badge {
+    background-color: rgba(168, 192, 255, 0.1);
+    color: #a8c0ff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    align-self: flex-start;
+    margin-bottom: 12px;
+}
+
+/* Tool Title inside card */
+.bento-card h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Tool Description */
+.bento-card p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Footer section inside the card */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.category {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* Try Tool button inside card */
+.btn-card {
+    color: #a8c0ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.btn-card:hover {
+    color: #ffffff;
+}
+/* ==========================================================================
+   Footer Section Styling
+   ========================================================================== */
+footer {
+    background-color: #0b0f19;
+    border-top: 1px solid #1f2937;
+    padding: 60px 0 30px 0;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.footer-brand h3 span {
+    color: rgb(121, 93, 1);
+}
+
+.footer-brand p {
+    color: #9ca3af;
+    max-width: 300px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #a8c0ff;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 25px 40px 0 40px;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================   Header & Navigation Bar   ========================================================================== */.navbar {    display: flex;    justify-content: space-between;    align-items: center;    padding: 20px 8%;    background-color: rgba(11, 15, 25, 0.8); /* Semi-transparent dark slate */    backdrop-filter: blur(12px); /* Premium glassmorphism blur effect */    -webkit-backdrop-filter: blur(12px);    border-bottom: 1px solid #1f2937;    position: sticky;    top: 0;    z-index: 1000;}
+/* Nav links listing clean-up */.navbar ul {    display: flex;    align-items: center;    list-style: none;    gap: 35px;    margin: 0;    padding: 0;}
+.navbar ul li a {    color: #9ca3af;    text-decoration: none;    font-size: 1rem;    font-weight: 500;    transition: color 0.25s ease;}
+.navbar ul li a:hover {    color: #ffffff; /* Turns bright white when hovered */}
+/* Premium Styling for the Submit Tool Button */.btn-primary {    background: linear-gradient(135deg, #3f2b96, #a8c0ff);    color: #ffffff !important;    padding: 10px 22px;    border-radius: 30px;    font-weight: 600;    border: none;    transition: transform 0.2s ease, box-shadow 0.2s ease;}
+.btn-primary:hover {    transform: scale(1.03);    box-shadow: 0 4px 15px rgba(168, 192, 255, 0.2);    cursor: pointer;}
+/* ==========================================================================
+   Popup Form Modal Section
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px); /* Blurs out your main screen background */
+    -webkit-backdrop-filter: blur(8px);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Stays above your navigation bar */
+}
+
+.modal-content {
+    background-color: #111827; /* Rich dark-mode bento card base color */
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 15px;
+}
+
+.modal-header h3 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.close-modal-btn {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-modal-btn:hover {
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b0f19;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3f2b96;
+}
+
+.submit-form-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #3f2b96, #a8c0ff);
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.submit-form-btn:hover {
+    transform: scale(1.02);
+}
+/* Smooth Grid Filtering Animations */
+.bento-card {
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.3s ease;
+    will-change: opacity, transform;
+}
+
+/* The state when a card is filtered out (hidden) */
+.bento-card.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}

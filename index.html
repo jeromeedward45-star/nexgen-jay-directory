@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NexGen Jhay  |  premium Jhay Tool Directory Template</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <header class="navbar">
+    <div class="logo">
+        NexGen<span>Jhay</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#directory">Directory</a></li>
+            <li><a href="#" class="btn-primary">Submit Tool</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+        <main>
+            <section class="hero">
+                <h1>Discover The Future Of <span class="gradient-text">Automation</span></h1>
+                <p> The world's most curated directory of AI Agents and Tools.</p>
+                <form class="search-bar" action="#" onsubmit="return false;">
+    <input type="text" placeholder="search for tools(e.g 'coding Assistant')...">
+</form>
+            </section>
+
+        <section id="directory" class="directory-container">
+            <h2> Popular AI Tools & Agents</h2>
+
+
+                    <div class="bento-grid">
+            <article class="bento-card featured">
+                <span class="badge">Featured</span>
+                <h3>DevGeniusAI</h3>
+                <p>An automation coding assistant from simple prompts. Perfect for modern software engineers.</p>
+                <div class="card-footer">
+                    <span class="category">Coding</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>ImagiCraft</h3>
+                <p>Generate hyper-realistic 8k images and digital art using next-gen neural networks.</p>
+                <div class="card-footer">
+                    <span class="category">Design</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>VoicFlow Pro</h3>
+                <p>Convert text to studio-quality human speech in over 40 languages instantly.</p>
+                <div class="card-footer">
+                    <span class="category">Audio</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>Cursor AI</h3>
+                <p>An AI-first code editor designed for pair programming, refactoring codebase logic, and rapid building.</p>
+                <div class="card-footer">
+                    <span class="category">Coding</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>Midjourney v6</h3>
+                <p>State-of-the-art text to image generator producing cinematic visuals and professional UI design assets.</p>
+                <div class="card-footer">
+                    <span class="category">Design</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>ElevenLabs</h3>
+                <p>Advanced voice synthesis technology featuring perfect voice cloning, sound effects, and audio mixing.</p>
+                <div class="card-footer">
+                    <span class="category">Audio</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>GitHub Copilot</h3>
+                <p>Your AI programmer companion that auto-completes code, writes syntax units, and handles repetitive coding tasks.</p>
+                <div class="card-footer">
+                    <span class="category">Coding</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>v0 by Vercel</h3>
+                <p>Generative UI system producing production-ready front-end code, HTML layouts, and clean CSS interfaces instantly.</p>
+                <div class="card-footer">
+                    <span class="category">Design</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <h3>ChatGPT Plus</h3>
+                <p>Conversational LLM capable of complex problem solving, text generation, data analysis, and workflow automation.</p>
+                <div class="card-footer">
+                    <span class="category">Automation</span>
+                    <a href="#" class="btn-card">Try Tool</a>
+                </div>
+            </article>
+
+                </section> </main> <footer>        <div class="footer-container">            <div class="footer-brand">                <h3>NexGen<span>Jhay</span></h3>                <p>The premium directory tracking the future of AI automation tools.</p>            </div>                        <div class="footer-links">                <div class="footer-column">                    <h4>Explore</h4>                    <ul>                        <li><a href="#directory">Directory</a></li>                        <li><a href="#">Submit a Tool</a></li>                        <li><a href="#">Featured Agents</a></li>                    </ul>                </div>                                <div class="footer-column">                    <h4>Connect</h4>                    <ul>                        <li><a href="https://github.com" target="_blank">GitHub</a></li>                        <li><a href="#" target="_blank">LinkedIn</a></li>                        <li><a href="#">Contact Support</a></li>                    </ul>                </div>            </div>        </div>                <div class="footer-bottom">            <p>&copy; 2026 NexGen Jhay. All rights reserved.</p>        </div>    </footer>
+                     <div id="submitModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Submit an AI Tool</h3>
+                <button class="close-modal-btn">&times;</button>
+            </div>
+            <form id="submissionForm">
+                <div class="form-group">
+                    <label for="toolName">Tool Name</label>
+                    <input type="text" id="toolName" required placeholder="e.g. DevGeniusAI">
+                </div>
+                <div class="form-group">
+                    <label for="toolDesc">Short Description</label>
+                    <textarea id="toolDesc" required rows="3" placeholder="What does this automation tool do?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="toolCategory">Category Tag</label>
+                    <select id="toolCategory">
+                        <option value="CODING">Coding</option>
+                        <option value="DESIGN">Design</option>
+                        <option value="AUDIO">Audio</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-form-btn">Send Application</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+    </html>
