@@ -36,6 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    document.querySelectorAll('.bento-card-link').forEach((cardLink) => {
+        cardLink.addEventListener('click', (event) => {
+            const href = cardLink.getAttribute('href');
+            if (!href || href === '#') return;
+
+            event.preventDefault();
+            window.open(href, '_blank', 'noopener,noreferrer');
+        });
+    });
+
     const searchInput = document.querySelector('.search-bar input');
     const bentoGrid = document.querySelector('.bento-grid');
 

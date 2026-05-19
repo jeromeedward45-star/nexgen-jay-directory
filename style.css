@@ -224,6 +224,8 @@ body {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 .bento-card:hover {
@@ -262,6 +264,7 @@ body {
     width: 200px;
     height: 200px;
     background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .badge {
@@ -450,6 +453,8 @@ nav ul li a:hover {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 /* Card Hover Effect */
