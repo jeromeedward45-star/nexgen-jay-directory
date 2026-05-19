@@ -1,4 +1,41 @@
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => e.preventDefault());
+    });
+
+    const modalElement = document.getElementById('submitModal');
+    const closeModalBtn = document.querySelector('.close-modal-btn');
+    const submissionForm = document.getElementById('submissionForm');
+
+    document.querySelectorAll('.btn-primary').forEach((btn) => {
+        if (!modalElement) return;
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modalElement.style.display = 'flex';
+        });
+    });
+
+    if (closeModalBtn && modalElement) {
+        closeModalBtn.addEventListener('click', () => {
+            modalElement.style.display = 'none';
+        });
+    }
+
+    window.addEventListener('click', (event) => {
+        if (modalElement && event.target === modalElement) {
+            modalElement.style.display = 'none';
+        }
+    });
+
+    if (submissionForm && modalElement) {
+        submissionForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Awesome! Your AI tool has been submitted for verification.');
+            submissionForm.reset();
+            modalElement.style.display = 'none';
+        });
+    }
+
     const searchInput = document.querySelector('.search-bar input');
     const bentoGrid = document.querySelector('.bento-grid');
 
@@ -26,65 +63,29 @@
             const matchesAllKeywords = searchKeywords.every(keyword => combinedCardText.includes(keyword));
 
             if (matchesAllKeywords) {
-                card.style.display = 'flex'; 
+                card.style.display = 'flex';
                 requestAnimationFrame(() => {
                     card.classList.remove("hidden");
                 });
             } else {
-                card.classList.add("hidden"); 
+                card.classList.add("hidden");
                 setTimeout(() => {
                     if (card.classList.contains("hidden")) {
                         card.style.display = 'none';
                     }
-                }, 400); 
+                }, 400);
             }
         });
     }
 
-    // Dynamic filtering as you type
     searchInput.addEventListener('input', (event) => {
         filterTools(event.target.value);
     });
 
-    // Intercept and handle explicit 'Enter' key submissions inside the field
     searchInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            event.preventDefault(); 
+            event.preventDefault();
             filterTools(searchInput.value);
         }
     });
-
-    // Handle form submit placeholder / Modal functionality preserved
-    const modalElement = document.getElementById('submitModal');
-    const submitBtn = document.querySelector('.btn-primary');
-    const closeModalBtn = document.querySelector('.close-modal-btn');
-    const submissionForm = document.getElementById('submissionForm');
-
-    if (submitBtn && modalElement) {
-        submitBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            modalElement.style.display = 'flex';
-        });
-    }
-
-    if (closeModalBtn && modalElement) {
-        closeModalBtn.addEventListener('click', () => {
-            modalElement.style.display = 'none';
-        });
-    }
-
-    window.addEventListener('click', (event) => {
-        if (modalElement && event.target === modalElement) {
-            modalElement.style.display = 'none';
-        }
-    });
-
-    if (submissionForm && modalElement) {
-        submissionForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            alert('Awesome! Your AI tool has been submitted for verification.');
-            submissionForm.reset();
-            modalElement.style.display = 'none';
-        });
-    }
 });
