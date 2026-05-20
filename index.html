@@ -13,6 +13,7 @@
     </div>
     <nav>
         <ul>
+            <li><a href="#profile">Profile</a></li>
             <li><a href="#directory">Directory</a></li>
             <li><a href="#" class="btn-primary">Submit Tool</a></li>
         </ul>
@@ -21,12 +22,36 @@
 
 
         <main>
-            <section class="hero">
+            <section id="profile" class="hero">
+                <div class="profile-card">
+                    <img
+                        src="images/lv_0_20260519214235.jpg"
+                        alt="Jhay — NexGen Jhay"
+                        class="profile-photo"
+                        width="140"
+                        height="140"
+                        onerror="this.onerror=null; this.src='images/profile.svg';"
+                    >
+                    <div class="profile-details">
+                        <p class="profile-label">Curated by</p>
+                        <h2 class="profile-name">Jhay</h2>
+                        <p class="profile-role">AI Tools Curator &amp; Developer</p>
+                        <p class="profile-bio">Building NexGen Jhay — a hand-picked directory of the best AI agents and automation tools for creators and developers.</p>
+                        <div class="profile-links">
+                            <a href="https://github.com/jeromeedward45-star" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="#directory">Browse tools</a>
+                            <a id="bio-toggle-btn" onclick="toggleBio()">About Me</a>
+                            <p id="full-bio" style="display: none; margin-top: 15px; color: #ccc;">
+                                Adegah Jerome Edward, professionally known as Jhay, is an aspiring programmer from Ghana, currently studing at Bluecrest University College.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <h1>Discover The Future Of <span class="gradient-text">Automation</span></h1>
-                <p> The world's most curated directory of AI Agents and Tools.</p>
+                <p>The world's most curated directory of AI Agents and Tools.</p>
                 <form class="search-bar" action="#" onsubmit="return false;">
-    <input type="text" placeholder="search for tools(e.g 'coding Assistant')...">
-</form>
+                    <input type="text" placeholder="search for tools(e.g 'coding Assistant')...">
+                </form>
             </section>
 
         <section id="directory" class="directory-container">

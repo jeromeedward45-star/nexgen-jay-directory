@@ -99,3 +99,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+// Keep your existing listener for the search functionality
+document.addEventListener('DOMContentLoaded', () => {
+    // ... all your search filter code ...
+});
+
+// MOVE THIS OUTSIDE THE LISTENER so the button can find it!
+function toggleBio() {
+    const bio = document.getElementById("full-bio");
+    const btn = document.getElementById("bio-toggle-btn");
+
+    if (bio.style.display === "none") {
+        bio.style.display = "block";
+        btn.innerText = "Hide Bio";
+    } else {
+        bio.style.display = "none";
+        btn.innerText = "About Me";
+    }
+}
+
