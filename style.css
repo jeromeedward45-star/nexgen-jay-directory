@@ -847,4 +847,20 @@ footer {
 #bio-toggle-btn:hover {
     background-color: #4f46e5;
 }
+@media (max-width: 600px) {
+    .profile-links a {
+        padding: 15px 20px; /* Larger targets for thumbs */
+        display: block; /* Makes them easier to tap */
+        margin-bottom: 10px; /* Spacing between buttons */
+    }
+}
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column; /* Stacks image on top of bio */
+        text-align: center;
+    }
+    .profile-photo {
+        margin: 0 auto 15px auto; /* Centers the image */
+    }
+}
 
