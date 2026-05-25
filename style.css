@@ -79,7 +79,7 @@ body {
 }
 
     
-
+/* All .logo */
 
 .logo {
     font-size: 24px;
@@ -87,10 +87,15 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* .logo for */
 .logo span {
     color: #6366f1;
 }
 
+
+/* All .navbar */
+
+/* .navbar for */
 .navbar ul {
     display: flex;
     align-items: center;
@@ -98,13 +103,14 @@ body {
     gap: 30px;
 }
 
+/* .navbar for*/
 .navbar a {
     color: #9ca3af;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-
+/* .navbar for*/
 .navbar a:hover {
     color: #f3f4f6;
 }
@@ -119,8 +125,8 @@ body {
     display: inline-block;
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
 }
-
 /* 🔥 The Interactive Hover State */
+
 .navbar ul li a.btn-primary:hover {
     transform: translateY(-2px) scale(1.03); /* Lifts up and grows slightly */
     box-shadow: 0 4px 15px rgba(168, 192, 255, 0.4); /* Neon accent glow */
@@ -862,5 +868,15 @@ footer {
     .profile-photo {
         margin: 0 auto 15px auto; /* Centers the image */
     }
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* This forces the browser to hide anything that overflows sideways */
+}
+
+/* Ensure images don't break the container */
+img {
+    max-width: 100%;
+    height: auto;
 }
 

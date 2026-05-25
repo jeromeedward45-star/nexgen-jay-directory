@@ -117,4 +117,9 @@ function toggleBio() {
         btn.innerText = "About Me";
     }
 }
+document.querySelectorAll('*').forEach(el => {
+    if (el.offsetWidth > document.documentElement.offsetWidth) {
+        console.log('Culprit:', el);
+    }
+});
 
